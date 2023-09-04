@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10; /* Place the video behind other content */
+  }
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5bbf58a6-1e85-4cfe-83fd-02df6f482b45/de8nlib-6bed7b3d-3d7e-4763-bb60-18f5ee0127fd.png/v1/fill/w_1024,h_652,q_80,strp/background_prairie_pokemon_screencapture_by_nemotrex_de8nlib-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjUyIiwicGF0aCI6IlwvZlwvNWJiZjU4YTYtMWU4NS00Y2ZlLTgzZmQtMDJkZjZmNDgyYjQ1XC9kZThubGliLTZiZWQ3YjNkLTNkN2UtNDc2My1iYjYwLTE4ZjVlZTAxMjdmZC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZVgNGi61AOkC068E-wphWmAUW8amj0MiJySqDcMCVh8");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.menu p {
+    font-family: "Bangers";
+    font-size: 80px;
+    color: white;
+    text-shadow: 2px 1px 1px #c85f32;
+}
+.menu-container{
+    width: 800px;
+    height: 500px;
+    background-image: url("./menu.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.loading-gif{
+  /* Set the width and height to match the dimensions of your GIF */
+  width: 200px;
+  height: 200px;
+  /* Specify the animation properties */
+  
+}
+.level-container{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 133px;
+    left:260px;
+}
+.level-container button{
+    background-color:#ffd690;
+    border: 2px solid #c85f32;
+    width: 85px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: "Bangers";
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 1px 1px #c85f32;
+}
+.level-container button:hover{
+    color:aquamarine;
+}
+.pokemon-card-container{
+    display: flex;
+    padding: 20px;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns in each row */
+    gap: 20px;
+}
+.pokemon-card{
+    border: 1px solid gray;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+.pokemon-card:hover{
+    backdrop-filter: blur(500px);
+    border: 1px solid rgb(41, 173, 47);
+}
+.pokemon-card img{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    
+}
+.pokemon-card .name{
+    font-family: "Bangers";
+    text-align: center; 
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 1px 1px #c85f32;
+}
